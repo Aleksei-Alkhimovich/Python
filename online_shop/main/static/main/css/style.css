@@ -353,7 +353,7 @@ color: #fff;
 .Portfolio-box{
 	text-align:center;
 	margin-bottom:30px;
-	height:350px;
+	height:380px;
 	width:350px;
 	overflow:hidden;
 	float:left;
@@ -365,6 +365,28 @@ color: #fff;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
+
+.img-mobile {
+    width: 195px;
+    height: 260px;
+}
+
+.img-notebook {
+    width: 350px;
+     height: 200px;
+}
+
+.img-pc {
+    width: 170px;
+    height: 240px;
+}
+
+.img-accessories {
+    width: 225px;
+    height: 225px;
+}
+
+
 
 .Portfolio-box img:hover {
 	opacity: 0.6;
@@ -867,4 +889,12 @@ border: 2px solid #fff;
 .delay-12s {
 	animation-delay: 1.2s;
 	-webkit-animation-delay: 1.2s;
+}
+
+.container_registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }

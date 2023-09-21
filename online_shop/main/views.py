@@ -1,27 +1,19 @@
-from django.shortcuts import render, redirect
-from .models import Task
-from .forms import TaskForm
+from django.shortcuts import render
+from .models import Product
+
 
 def index(request):
     return render(request, 'main/index.html')
 
+def create(request):
+    return render(request, 'main/create.html')
 
 def shop(request):
-    return render(request, 'main/shop.html')
-
-
-def create(request):
-    error = ''
-    if request.method == 'POST':
-        form = TaskForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('home')
-        else:
-            error = 'Форма была введена не правильно'
-    form = TaskForm()
+    product = Product.objects.all()
     context = {
-        'form': form,
-        'error': error
+        'pr': product
     }
-    return render(request, 'main/create.html', context)
+
+    return render(request, 'main/shop.html', context)
+
+
