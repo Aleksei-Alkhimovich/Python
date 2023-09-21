@@ -129,3 +129,4 @@ LOGIN_REDIRECT_URL = 'home'
 # python -m pip install Pillow
 # pip install django-crispy-bootstrap
 # pip install django-crispy-forms
+# python.exe -m pip install --upgrade pip
