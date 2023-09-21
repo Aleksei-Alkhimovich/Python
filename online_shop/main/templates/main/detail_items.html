@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    {{ article.name }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>{{ article.name }}</h1>
+    </div>
+{% endblock %}
