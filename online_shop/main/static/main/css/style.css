@@ -358,6 +358,11 @@ color: #fff;
 	overflow:hidden;
 	float:left;
 	padding:0;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 }
 .Portfolio-box img{
 	margin-bottom:25px;

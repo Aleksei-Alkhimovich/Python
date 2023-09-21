@@ -26,6 +26,7 @@
 				{% if post.availability %}
 					{%  if post.group == 'mobile' %}
 						<div class="Porte">
+							{%  if post.group == 'mobile' %}
 							<div class=" Portfolio-box branding">  <!--Категория смартфонов-->
 								<a href="{{ post.img.url }}"><img class="img-mobile" src="{{ post.img.url }}" alt=""></a>
 								<h3>{{ post.name }}</h3>

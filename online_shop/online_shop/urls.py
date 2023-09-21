@@ -10,7 +10,7 @@ urlpatterns = [
     path('', include('main.urls')),
     path('registration', userViews.register, name='reg'),
     path('login', authViews.LoginView.as_view(template_name='users/login.html'), name='login'),
-    path('exit', authViews.LogoutView.as_view(template_name='main/index.html'), name='exit')
+    path('exit', authViews.LogoutView.as_view(template_name='main/index.html'), name='exit'),
 ]
 
 if settings.DEBUG:
