@@ -25,42 +25,50 @@
 			{% for post in pr %}
 				{% if post.availability %}
 					{%  if post.group == 'mobile' %}
-						<div class=" Portfolio-box branding">  <!--Категория смартфонов-->
-							<a href="{{ post.img.url }}"><img class="img-mobile" src="{{ post.img.url }}" alt=""></a>
-							<h3>{{ post.name }}</h3>
-							<p>Цена: {{ post.price }} руб</p>
+						<div class="Porte">
+							<div class=" Portfolio-box branding">  <!--Категория смартфонов-->
+								<a href="{{ post.img.url }}"><img class="img-mobile" src="{{ post.img.url }}" alt=""></a>
+								<h3>{{ post.name }}</h3>
+								<p>Цена: {{ post.price }} руб</p>
+							</div>
 							<div class="portfolio_button">
 								<a href="{% url 'news_items' post.id %}" class="btn btn-danger">К товару</a>
 								<a href="" class="btn btn-warning">В корзину</a>
 							</div>
 						</div>
 					{% elif post.group == 'notebook' %}
-						<div class="Portfolio-box webdesign">  <!--Категория ноутбуков-->
-							<a href="{{ post.img.url }}"><img class="img-notebook" src="{{ post.img.url }}" alt=""></a>
-							<h3>{{ post.name }}</h3>
-							<p>Цена: {{ post.price }} руб</p>
-							<div class="portfolio_button">
-								<a href="" class="btn btn-danger">К товару</a>
-								<a href="" class="btn btn-warning">В корзину</a>
+						<div class="Porte">
+							<div class="Portfolio-box webdesign">  <!--Категория ноутбуков-->
+								<a href="{{ post.img.url }}"><img class="img-notebook" src="{{ post.img.url }}" alt=""></a>
+								<h3>{{ post.name }}</h3>
+								<p>Цена: {{ post.price }} руб</p>
 							</div>
+								<div class="portfolio_button">
+									<a href="{% url 'news_items' post.id %}" class="btn btn-danger">К товару</a>
+									<a href="" class="btn btn-warning">В корзину</a>
+								</div>
 						</div>
 					{% elif post.group == 'pc' %}
-						<div class=" Portfolio-box printdesign">   <!--Категория компьютеров-->
-							<a href="{{ post.img.url }}"><img class="img-pc" src="{{ post.img.url }}" alt=""></a>
-							<h3>{{ post.name }}</h3>
-							<p>Цена: {{ post.price }} руб</p>
-							<div class="portfolio_button">
-								<a href="" class="btn btn-danger">К товару</a>
-								<a href="" class="btn btn-warning">В корзину</a>
+						<div class="Porte">
+							<div class=" Portfolio-box printdesign">   <!--Категория компьютеров-->
+								<a href="{{ post.img.url }}"><img class="img-pc" src="{{ post.img.url }}" alt=""></a>
+								<h3>{{ post.name }}</h3>
+								<p>Цена: {{ post.price }} руб</p>
 							</div>
+								<div class="portfolio_button">
+									<a href="{% url 'news_items' post.id %}" class="btn btn-danger">К товару</a>
+									<a href="" class="btn btn-warning">В корзину</a>
+								</div>
 						</div>
 					{% elif post.group == 'accessories' %}
-						<div class=" Portfolio-box photography">  <!--Категория аксессуаров-->
-							<a href="{{ post.img.url }}"><img class="img-accessories" src="{{ post.img.url }}" alt=""></a>
-							<h3>{{ post.name }}</h3>
-							<p>Цена: {{ post.price }} руб</p>
+						<div class="Porte">
+							<div class=" Portfolio-box photography">  <!--Категория аксессуаров-->
+								<a href="{{ post.img.url }}"><img class="img-accessories" src="{{ post.img.url }}" alt=""></a>
+								<h3>{{ post.name }}</h3>
+								<p>Цена: {{ post.price }} руб</p>
+							</div>
 							<div class="portfolio_button">
-								<a href="" class="btn btn-danger">К товару</a>
+								<a href="{% url 'news_items' post.id %}" class="btn btn-danger">К товару</a>
 								<a href="" class="btn btn-warning">В корзину</a>
 							</div>
 						</div>
