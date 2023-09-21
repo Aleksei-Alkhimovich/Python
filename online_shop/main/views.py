@@ -13,7 +13,6 @@ def shop(request):
     context = {
         'pr': product
     }
-
     return render(request, 'main/shop.html', context)
 
 
